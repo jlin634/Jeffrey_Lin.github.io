@@ -1,0 +1,14 @@
+name: "Yay internet!"
+output_dir: "."
+navbar:
+  title: "Home"
+right:
+  - text: "About Me"
+href: resume.html
+- icon: fa-envelope fa-lg
+href: mailto:<jl7035@cumc.columbia.edu>
+  - icon: fa-github fa-lg
+href: https://github.com/jlin634/
+  output:
+  html_document:
+  theme: Lumen
