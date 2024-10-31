@@ -19,5 +19,15 @@ library(plotly)
 ```{r}
 data("rest_inspec")
 
+rest_inspec <- 
+  rest_inspec %>% 
+  janitor::clean_names()
+  
+
+```
+
+
+```{r}
+
 ```
 
