@@ -33,6 +33,15 @@ rest_inspec <-
 
 
 ```{r}
+rest_inspec %>%
+  filter(cuisine_description == "Chinese") %>% 
+  group_by(boro) %>% 
+  plot_ly(
+    x = ~boro, y = ~score, color = ~boro,
+    type = "box", colors = "viridis"
+  )
+
+
 rest_inspec %>% 
   drop_na(boro, score) %>% 
   group_by(boro) %>% 
@@ -45,32 +54,23 @@ rest_inspec %>%
 
 
 ```{r}
-rest_inspec %>%
-  filter(boro == "MANHATTAN") %>% 
-  group_by(critical_flag) %>% 
-  count() %>% 
-  mutate(
-    critical_flag = fct_reorder(critical_flag, n)
-  ) %>% 
+
+rest_inspec %>% 
+  filter(cuisine_description == "Chinese") %>%
+  count(grade) %>% 
+  mutate(grade == fct_reorder(grade, n)) %>% 
   plot_ly(
-    x = ~critical_flag, y = ~n, color = ~critical_flag,
+    x = ~grade, y = ~n, color = ~grade,
     type = "bar", colors = "viridis"
   )
 
-rest_inspec %>% 
-  count(boro) %>% 
-  mutate(
-    boro = fct_reorder(boro, n)
-  ) %>% 
-  plot_ly(
-    x = ~boro, y = ~n, color = ~boro,
-    type = "bar", colors = "viridis"
-  )
 
 ```
 
 
 ```{r}
+
+
 ```
 
 
