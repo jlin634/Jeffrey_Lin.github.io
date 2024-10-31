@@ -22,7 +22,9 @@ data("rest_inspec")
 rest_inspec <- 
   rest_inspec %>% 
   janitor::clean_names() %>% 
-  filter(grade %in% c("A", "B", "C"))
+  filter(
+    grade %in% c("A", "B", "C"),
+    boro != "Missing")
 
 
 ```
