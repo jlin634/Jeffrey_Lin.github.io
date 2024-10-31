@@ -6,8 +6,6 @@ navbar:
     - text: "About Me"
       href: resume.html
     - text: "Dashboard"
-    - text: "Google Verification"
-      href: googleeddbf58f78e927f5.html
       href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<jl7035@cumc.columbia.edu>
