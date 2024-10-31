@@ -38,16 +38,7 @@ rest_inspec %>%
   group_by(boro) %>% 
   plot_ly(
     x = ~boro, y = ~score, color = ~boro,
-    type = "box", colors = "viridis"
-  )
-
-
-rest_inspec %>% 
-  drop_na(boro, score) %>% 
-  group_by(boro) %>% 
-  plot_ly(
-    x = ~boro, y = ~score, color = ~boro,
-    type = "box", colors = "viridis"
+    type = "violin", colors = "viridis"
   )
 
 ```
@@ -65,10 +56,24 @@ rest_inspec %>%
   )
 
 
+
 ```
 
 
 ```{r}
+rest_inspec %>% 
+  filter(cuisine_description == "Chinese") %>%
+  mutate(
+    data_label = str_c("Restaurant: ", dba, "Borough: ", boro)
+  ) %>% 
+  plot_ly(
+    x = ~inspection_date, y = ~score, color = ~boro, text = ~data_label, 
+    type = "scatter", mode = "markers", alpha = 0.5
+  )
+  
+  
+
+
 
 
 ```
