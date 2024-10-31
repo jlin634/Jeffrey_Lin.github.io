@@ -1,5 +1,5 @@
 ---
-title: "Resume"
+title: "About Me"
 output: 
   html_document:
     toc: true
@@ -7,6 +7,14 @@ output:
     theme: cerulean
 ---
 
-<img src="Images/Resume_Merck_Fall_2025" style="width:75%;">
+# Resume
+
+<img src="Images/Base_Resume_2025.jpg" style="width:75%;">
+
+
+
+
+
+
 
 
