@@ -24,10 +24,18 @@ rest_inspec <-
   janitor::clean_names() %>% 
   filter(grade %in% c("A", "B", "C"))
 
+
 ```
 
 
 ```{r}
+rest_inspec %>% 
+  drop_na(boro, score) %>% 
+  group_by(boro) %>% 
+  plot_ly(
+    x = ~boro, y = ~score, color = ~boro,
+    type = "box", colors = "viridis"
+  )
 
 ```
 
