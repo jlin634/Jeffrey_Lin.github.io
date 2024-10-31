@@ -26,7 +26,7 @@ rest_inspec <-
     grade %in% c("A", "B", "C"),
     boro != "Missing"
   ) %>% 
-  drop_na(boro, inspection_date, score, grade, cuisine_description) 
+  drop_na() 
 
 
 ```
