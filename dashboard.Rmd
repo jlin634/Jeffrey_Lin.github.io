@@ -6,3 +6,18 @@ output:
     vertical_layout: fill
 ---
 
+```{r setup, include=FALSE}
+
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+
+```
+
+
+```{r}
+data("rest_inspec")
+
+```
+
