@@ -24,7 +24,9 @@ rest_inspec <-
   janitor::clean_names() %>% 
   filter(
     grade %in% c("A", "B", "C"),
-    boro != "Missing")
+    boro != "Missing"
+  ) %>% 
+  drop_na(boro, inspection_date, score, grade, cuisine_description) 
 
 
 ```
@@ -40,4 +42,15 @@ rest_inspec %>%
   )
 
 ```
+
+
+```{r}
+rest_inspec
+
+```
+
+
+```{r}
+```
+
 
