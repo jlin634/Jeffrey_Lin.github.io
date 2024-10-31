@@ -9,8 +9,8 @@ navbar:
       href: mailto:<jl7035@cumc.columbia.edu>
     - icon: fa-github fa-lg
       href: https://github.com/jlin634/
-    - icon: ion-logo-linkedin
-      href: www.linkedin.com/in/jeffrey-lin-a85848268/
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/jeffrey-lin-a85848268/
 output:
   html_document:
-    theme: cerulean
+    theme: flatly
