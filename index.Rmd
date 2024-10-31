@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Jeffrey Lin"
 output: 
   html_document:
     toc: true
@@ -7,9 +7,12 @@ output:
     theme: cerulean
 ---
 
-# About Jeffrey Lin
+# About Me
 
-![](Images/Profile_Pic.jpg)
+
+<img src="Images/Profile_Pic.jpg" style="width:75%;">
+
+
 
 Hi everyone! My name is Jeffrey Lin and I am a current candidate for a Master 
 of Science in Biostatistics at Columbia University Mailman School of Public 
