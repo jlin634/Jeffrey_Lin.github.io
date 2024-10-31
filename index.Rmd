@@ -11,6 +11,8 @@ output:
 
 # About Jeffrey Lin
 
+![](Images/Profile_Pic.jpg)
+
 Hi everyone! My name is Jeffrey Lin and I am a current candidate for a Master 
 of Science in Biostatistics at Columbia University Mailman School of Public 
 Health. I completed my undergraduate education at Tufts University, graduating 
