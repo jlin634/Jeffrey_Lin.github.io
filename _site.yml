@@ -5,7 +5,7 @@ navbar:
   right:
     - text: "About Me"
       href: resume.html
-    - text: "Dash Board"
+    - text: "Dashboard"
       href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<jl7035@cumc.columbia.edu>
