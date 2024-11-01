@@ -7,6 +7,11 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{r, include=FALSE}
 
 library(flexdashboard)
 library(tidyverse)
@@ -31,6 +36,9 @@ rest_inspec <-
 
 ```
 
+Column {data-width=650}
+-------------------------------------------------------------------------------
+
 ### Distribution of Health Inspection Scores for Chinese Restaurants
 
 ```{r}
@@ -48,6 +56,10 @@ rest_inspec %>%
   
 
 ```
+
+
+Column {data-width=350}
+-----------------------------------------------------------------------
 
 ### Number of Chinese Restaurants by Borough
 
