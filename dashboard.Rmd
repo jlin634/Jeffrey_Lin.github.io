@@ -39,7 +39,12 @@ rest_inspec %>%
   plot_ly(
     x = ~boro, y = ~score, color = ~boro,
     type = "violin", colors = "viridis"
+  ) %>% 
+  layout(
+    xaxis = list(title = "Borough"),
+    yaxis = list(title = "Health Inspection Score")
   )
+  
 
 ```
 
