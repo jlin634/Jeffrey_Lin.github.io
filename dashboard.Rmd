@@ -47,15 +47,18 @@ rest_inspec %>%
 ```{r}
 
 rest_inspec %>% 
-  filter(cuisine_description == "Chinese") %>%
-  count(grade) %>% 
-  mutate(grade == fct_reorder(grade, n)) %>% 
+  group_by(boro) %>% 
+  distinct(dba) %>% 
+  count() %>% 
   plot_ly(
-    x = ~grade, y = ~n, color = ~grade,
+    x = ~boro, y = ~n, color = ~boro, 
     type = "bar", colors = "viridis"
+  ) %>% 
+  layout(
+    xaxis = list(title = "Borough"),
+    yaxis = list(title = "Number of Restaurants"),
   )
-
-
+  
 
 ```
 
