@@ -31,6 +31,7 @@ rest_inspec <-
 
 ```
 
+### Distribution of Health Inspection Scores for Chinese Restaurants
 
 ```{r}
 rest_inspec %>%
@@ -48,6 +49,7 @@ rest_inspec %>%
 
 ```
 
+### Number of Chinese Restaurants by Borough
 
 ```{r}
 
@@ -68,6 +70,7 @@ rest_inspec %>%
 
 ```
 
+### Health Inspection Scores for Chinese Restaurants from 2013-2018
 
 ```{r}
 rest_inspec %>% 
